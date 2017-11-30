@@ -26,4 +26,27 @@
             data: [0, 22, 20, 28, 37, 43, 56],
         }]
        },
+       options: {
+           layout: {
+               padding: {
+                   left: 50,
+                   right: 50,
+                   top: 20,
+                   bottom: 20
+               }
+            },
+           title: {
+               display: true,
+               text: '2017 Year Chart',
+            //    position: 'right'
+           },
+           scales: {
+               yAxes: [{
+                   gridLines: {
+                       display: true,
+                       color: "rgba(98, 224, 228, 0.86)"
+                   }
+               }],
+           }
+       }
    });  
