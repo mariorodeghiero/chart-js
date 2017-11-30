@@ -12,33 +12,33 @@ var gulp = require('gulp')
     , csslint = require('gulp-csslint')//npm install --save-dev gulp-csslint
     , sass = require('gulp-sass');
 
-// tarefa para criar a pasta dist com todos arquivos
+// tarefa para criar a pasta docs com todos arquivos
 gulp.task('copy', ['clean'], function() {
     return gulp.src('src/**/*') // retorna uma stream dizendo que finalizou a tarefa "assincrona"
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('docs'));
 });
 
 // tarefa para apagar
 gulp.task('clean', function( ) {
-    return gulp.src('dist') // retorna uma stream dizendo que finalizou a tarefa "assincrona"
+    return gulp.src('docs') // retorna uma stream dizendo que finalizou a tarefa "assincrona"
         .pipe(clean());
 });
 
 // Tarefa para reduzir imagens
 gulp.task('build-img', function() {
-   return gulp.src('dist/img/**/*')
+   return gulp.src('docs/img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('docs/img'));
 });
 
 // Tarefa que aplica o uglify e mimifica os arquivos css e js, onde apontados no arquivo html
 gulp.task('usemin', function() {
-   return gulp.src('dist/**/*.html')
+   return gulp.src('docs/**/*.html')
         .pipe(usemin({
          js: [ uglify()],
          css: [ cssmin() ]
         }))
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('docs'));
 });
 
 //Tarefa para atualizar o browser
