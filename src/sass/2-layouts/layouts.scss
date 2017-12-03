@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
     margin: 0;
-    padding: 0
+    padding: 0;
+    color: #ffffff
 }
 
 h1 {
@@ -17,6 +18,10 @@ h1 {
     height: 100vh;
     .info {
         background-color: #0a0a0a;
+        h2{
+            text-align: center;
+            color: #ffffff;
+        }
     }
     .chart {
         background-color: #ffffff;
