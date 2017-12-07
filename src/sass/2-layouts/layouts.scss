@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 body {
     margin: 0;
     padding: 0;
-    color: #ffffff
-}
-
-h1 {
-    color: #000;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 2.2rem;
 }
 
 .wrapper {
@@ -17,10 +10,41 @@ h1 {
     grid-template-columns: 30% 70%;
     height: 100vh;
     .info {
-        background-color: #0a0a0a;
-        h2{
+        background-color: rgba(19, 85, 86, 0.298);
+        h2 {
             text-align: center;
-            color: #ffffff;
+            color: #000;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.1rem;
+        }
+        input[type=checkbox] {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            border: 1px solid #c8c6c6;
+            width: 15px;
+            height: 15px;
+            border-radius: 2px;
+           
+            +label:before {
+                font-family: FontAwesome;
+                display: inline-block;
+                font-size: 19px;
+                margin: 10px 0px 10px 30px;
+            }
+            :focus {
+                outline: none;
+            }
+        }
+        #checkbox {
+            display: none;
+            +label:before {
+                content: "\f096";
+                letter-spacing: 10px;
+            }
+            &:checked+label:before {
+                content: '\f046';
+            }
         }
     }
     .chart {
