@@ -10,51 +10,52 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
+* node.js
+* NPM Package Manager
+
+#
+- ### Deployment Mode Features:
+    > - After tasks finishes, will be creates a */public* directory 
+    > - Minified and also concatenated **css** and **js** files setted at ```<-- build-->``` inside index.html
+    > - Hint for SASS and CSS compilation
+    > - Hint for JS files (With ES6 Support)
+    > - AutoPrefixer for CSS files
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Clone this repository
 
 ```
-Give the example
+git clone http://mariorodeghiero.com/chart-js/
 ```
-
-And repeat
-
+Installing the dependencies from the NPM Package Manager
 ```
-until finished
+npm install
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+```
+To start the development environment, run the following command:
 
 ```
-Give an example
+gulp server
 ```
+After run, the BrowserSync will open a browser window automatically at http://localhost:3000
 
-### And coding style tests
+On this mode, the development mode compiles SASS files every saved file and put the file at /src/css
 
-Explain what these tests test and why
+# 
+## Built With
 
-```
-Give an example
-```
+* [Node.JS](https://nodejs.org) - The runtime build
+* [NPM](https://www.npmjs.com/) - Dependency Management
+* [Bower](https://bower.io/) - Front-end Dependency Management
+* [Gulp](http://gulpjs.com/) - Development Task Manager
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Run the command below to deploy
+```
+gulp 
+```
 
 ## Built With
 
@@ -64,12 +65,12 @@ Add additional notes about how to deploy this on a live system
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/mariorodeghiero/chart-js/blob/master/CONTRIBUTRING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 
 ## Authors
 
-* [Willian Justen](https://github.com/WillianJusten)
+* [Mário Antônio A. Rodeghiero](https://github.com/mariorodeghiero)
 
 
 ## License
