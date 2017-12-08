@@ -14,12 +14,12 @@ What things you need to install the software and how to install them
 * NPM Package Manager
 
 #
-- ### Deployment Mode Features:
-    > - After tasks finishes, will be creates a */public* directory 
-    > - Minified and also concatenated **css** and **js** files setted at ```<-- build-->``` inside index.html
-    > - Hint for SASS and CSS compilation
-    > - Hint for JS files (With ES6 Support)
-    > - AutoPrefixer for CSS files
+### Deployment Mode Features:
+ - After tasks finishes, will be creates a */public* directory 
+ - Minified and also concatenated **css** and **js** files setted at ```<-- build-->``` inside index.html
+ - Hint for SASS and CSS compilation
+ - Hint for JS files (With ES6 Support)
+ - AutoPrefixer for CSS files
 
 ### Installing
 
@@ -32,7 +32,6 @@ Installing the dependencies from the NPM Package Manager
 ```
 npm install
 ```
-```
 To start the development environment, run the following command:
 
 ```
@@ -40,28 +39,20 @@ gulp server
 ```
 After run, the BrowserSync will open a browser window automatically at http://localhost:3000
 
-On this mode, the development mode compiles SASS files every saved file and put the file at /src/css
+## Deployment
 
-# 
+Run the command below to deploy
+```
+gulp
+```
 ## Built With
 
 * [Node.JS](https://nodejs.org) - The runtime build
 * [NPM](https://www.npmjs.com/) - Dependency Management
 * [Bower](https://bower.io/) - Front-end Dependency Management
 * [Gulp](http://gulpjs.com/) - Development Task Manager
+* [Chart.js](http://www.chartjs.org/) - Simple yet flexible JavaScript charting for designers & developers
 
-## Deployment
-
-Run the command below to deploy
-```
-gulp 
-```
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
