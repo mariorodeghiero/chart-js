@@ -19,9 +19,11 @@ body {
     .wrapper .info img {
       float: right;
       border-radius: 50%;
-      margin: 15px;
-      padding: 5px;
-      background: #edecec; }
+      height: 150px;
+      width: 150px;
+      margin: 15px 15px;
+      background-image: url("https://filmshotfreezer.files.wordpress.com/2011/07/untitled-1.jpg");
+      background-size: cover; }
     .wrapper .info .check-form {
       margin-top: 100px; }
     .wrapper .info input[type=checkbox] {
@@ -36,7 +38,7 @@ body {
         font-family: FontAwesome;
         display: inline-block;
         font-size: 19px;
-        margin: 10px 0px 10px 30px; }
+        margin: 10px 0px 15px 30px; }
       .wrapper .info input[type=checkbox] :focus {
         outline: none; }
     .wrapper .info #checkbox1,
@@ -60,3 +62,6 @@ body {
         content: '\f046'; }
   .wrapper .chart {
     background-color: #ffffff; }
+    .wrapper .chart h1 {
+      text-align: center;
+      font-family: 'Roboto', sans-serif; }
