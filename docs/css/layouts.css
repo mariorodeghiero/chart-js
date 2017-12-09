@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css");
 body {
   margin: 0;
   padding: 0; }
@@ -9,12 +9,21 @@ body {
   grid-template-columns: 30% 70%;
   height: 100vh; }
   .wrapper .info {
-    background-color: rgba(19, 85, 86, 0.298); }
-    .wrapper .info h2 {
-      text-align: center;
-      color: #000;
+    background-color: rgba(39, 137, 157, 0.812); }
+    .wrapper .info h1 {
+      text-align: left;
+      padding: 20px 20px;
+      color: #f8f2f2;
       font-family: 'Roboto', sans-serif;
       font-size: 2.1rem; }
+    .wrapper .info img {
+      float: right;
+      border-radius: 50%;
+      margin: 15px;
+      padding: 5px;
+      background: #edecec; }
+    .wrapper .info .check-form {
+      margin-top: 100px; }
     .wrapper .info input[type=checkbox] {
       appearance: none;
       -moz-appearance: none;
@@ -30,12 +39,24 @@ body {
         margin: 10px 0px 10px 30px; }
       .wrapper .info input[type=checkbox] :focus {
         outline: none; }
-    .wrapper .info #checkbox {
+    .wrapper .info #checkbox1,
+    .wrapper .info #checkbox2,
+    .wrapper .info #checkbox3,
+    .wrapper .info #checkbox4,
+    .wrapper .info #checkbox5 {
       display: none; }
-      .wrapper .info #checkbox + label:before {
+      .wrapper .info #checkbox1 + label:before,
+      .wrapper .info #checkbox2 + label:before,
+      .wrapper .info #checkbox3 + label:before,
+      .wrapper .info #checkbox4 + label:before,
+      .wrapper .info #checkbox5 + label:before {
         content: "\f096";
         letter-spacing: 10px; }
-      .wrapper .info #checkbox:checked + label:before {
+      .wrapper .info #checkbox1:checked + label:before,
+      .wrapper .info #checkbox2:checked + label:before,
+      .wrapper .info #checkbox3:checked + label:before,
+      .wrapper .info #checkbox4:checked + label:before,
+      .wrapper .info #checkbox5:checked + label:before {
         content: '\f046'; }
   .wrapper .chart {
     background-color: #ffffff; }

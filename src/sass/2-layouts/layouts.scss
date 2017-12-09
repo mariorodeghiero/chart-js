@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
 body {
     margin: 0;
     padding: 0;
@@ -10,13 +10,24 @@ body {
     grid-template-columns: 30% 70%;
     height: 100vh;
     .info {
-        background-color: rgba(19, 85, 86, 0.298);
-        h2 {
-            text-align: center;
-            color: #000;
+        background-color: rgba(39, 137, 157, 0.812);
+        h1 {
+            text-align: left;
+            padding: 20px 20px;
+            color: rgb(248, 242, 242);
             font-family: 'Roboto', sans-serif;
             font-size: 2.1rem;
         }
+        img {
+            float: right;
+            border-radius: 50%;
+            margin: 15px;
+            padding: 5px;
+            background: rgb(237, 236, 236);
+        }
+        .check-form{
+            margin-top: 100px;
+    }
         input[type=checkbox] {
             appearance: none;
             -moz-appearance: none;
@@ -25,18 +36,22 @@ body {
             width: 15px;
             height: 15px;
             border-radius: 2px;
-           
             +label:before {
                 font-family: FontAwesome;
                 display: inline-block;
                 font-size: 19px;
                 margin: 10px 0px 10px 30px;
             }
-            :focus {
+             :focus {
                 outline: none;
             }
         }
-        #checkbox {
+        #checkbox1,
+        #checkbox2,
+        #checkbox3,
+        #checkbox4,
+        #checkbox5,
+        {
             display: none;
             +label:before {
                 content: "\f096";
