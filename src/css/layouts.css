@@ -13,7 +13,7 @@ body {
     .wrapper .info h1 {
       text-align: left;
       padding: 20px 20px;
-      color: #f8f2f2;
+      color: #dcd7d7;
       font-family: 'Roboto', sans-serif;
       font-size: 2.1rem; }
     .wrapper .info img {
@@ -26,6 +26,11 @@ body {
       background-size: cover; }
     .wrapper .info .check-form {
       margin-top: 100px; }
+      .wrapper .info .check-form .icons {
+        padding: 10px; }
+        .wrapper .info .check-form .icons a {
+          text-decoration: none;
+          color: #d0caca; }
     .wrapper .info input[type=checkbox] {
       appearance: none;
       -moz-appearance: none;
