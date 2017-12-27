@@ -30,21 +30,21 @@ body {
         .wrapper .info .check-form .icons a {
           text-decoration: none;
           color: #d0caca; }
-    .wrapper .info input[type=checkbox] {
-      appearance: none;
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      border: 1px solid #c8c6c6;
-      width: 15px;
-      height: 15px;
-      border-radius: 2px; }
-      .wrapper .info input[type=checkbox] + label:before {
-        font-family: FontAwesome;
-        display: inline-block;
-        font-size: 19px;
-        margin: 10px 0px 15px 30px; }
-      .wrapper .info input[type=checkbox] :focus {
-        outline: none; }
+      .wrapper .info .check-form input[type=checkbox] {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border: 1px solid #c8c6c6;
+        width: 15px;
+        height: 15px;
+        border-radius: 2px; }
+        .wrapper .info .check-form input[type=checkbox] + label:before {
+          font-family: FontAwesome;
+          display: inline-block;
+          font-size: 19px;
+          margin: 10px 0 15px 30px; }
+        .wrapper .info .check-form input[type=checkbox] :focus {
+          outline: none; }
     .wrapper .info #checkbox1,
     .wrapper .info #checkbox2,
     .wrapper .info #checkbox3,

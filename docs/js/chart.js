@@ -10,7 +10,7 @@
                backgroundColor: 'rgb(255, 99, 132)',
                pointHoverBackgroundColor: 'rgb(255, 99, 132)',
                fill: false,
-               data: [0, 10, 5, 2, 20, 30, 45],
+               data: [0, 10, 5, 2, 20, 30, 45]
            },
         {
             label: " Vit. D ",

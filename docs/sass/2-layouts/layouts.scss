@@ -7,53 +7,51 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
     height: 100vh;
     .info {
         background-color: rgba(39, 137, 157, 0.812);
         h1 {
-            text-align: left;
-            padding: 20px 20px;
+            margin: 120px 20px;
             color: rgb(220, 215, 215);
             font-family: 'Roboto', sans-serif;
             font-size: 2.1rem;
         }
         img {
-            float: right;
+            float: left;
             border-radius: 50%;
             height: 150px;
             width: 150px;
-            margin: 15px 15px;
+            margin: 30px 30px;
             background-image: url("https://filmshotfreezer.files.wordpress.com/2011/07/untitled-1.jpg");
             background-size: cover;
         }
         .check-form {
             margin-top: 100px;
-            .icons{
+            .icons {
                 padding: 10px;
-                
-                a{
+                a {
                     text-decoration: none;
                     color: #d0caca;
                 }
             }
-        }
-        input[type=checkbox] {
-            appearance: none;
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            border: 1px solid #c8c6c6;
-            width: 15px;
-            height: 15px;
-            border-radius: 2px;
-            +label:before {
-                font-family: FontAwesome;
-                display: inline-block;
-                font-size: 19px;
-                margin: 10px 0px 15px 30px;
-            }
-             :focus {
-                outline: none;
+            input[type=checkbox] {
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                border: 1px solid #c8c6c6;
+                width: 15px;
+                height: 15px;
+                border-radius: 2px;
+                +label:before {
+                    font-family: FontAwesome;
+                    display: inline-block;
+                    font-size: 19px;
+                    margin: 10px 0 15px 30px;
+                }
+                 :focus {
+                    outline: none;
+                }
             }
         }
         #checkbox1,
@@ -73,11 +71,11 @@ body {
         }
     }
     .chart {
+        margin: 2% 10% 0 10%;
         background-color: #ffffff;
-        h1{
+        h1 {
             text-align: center;
-            font-family: 'Roboto',
-            sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
     }
 }

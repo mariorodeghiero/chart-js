@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.min.css"/>
+    <!-- build:css css/index.min.css -->
+    <link href="css/plugins.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/layouts.css" rel="stylesheet">
+    <link href="css/modules.css" rel="stylesheet">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -16,14 +21,14 @@
 
         <div class="info">
             <img src="https://filmshotfreezer.files.wordpress.com/2011/07/untitled-1.jpg" class="hoverZoomLink">
-            <h1>John Doe</h1>
+            <h1  id="name">John Doe</h1>
             <form class="check-form">
                 <div class="icons">
-                    <a href="" >
-                        <i class="material-icons">add_circle_outline</i>
+                    <a href="">
+                        <i  id="addItem" class="material-icons">add_circle_outline</i>
                     </a>
                     <a href="">
-                        <i class="material-icons">&#xE15D;</i>
+                        <i id="removeItem" class="material-icons">delete</i>
                     </a>
                 </div>
                 <input type="checkbox" id="checkbox1" name="">
@@ -41,7 +46,6 @@
                 <input type="checkbox" id="checkbox5" name="">
                 <label for="checkbox5"> Zinc</label>
                 <br>
-
             </form>
         </div>
         <div class="chart">
@@ -51,7 +55,11 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script src="js/index.min.js"></script>
+    <!-- build:js js/index.min.js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/add-remove-item.js"></script>
+    <!-- endbuild -->
 
 </body>
 

@@ -28,31 +28,30 @@ body {
         }
         .check-form {
             margin-top: 100px;
-            .icons{
+            .icons {
                 padding: 10px;
-                
-                a{
+                a {
                     text-decoration: none;
                     color: #d0caca;
                 }
             }
-        }
-        input[type=checkbox] {
-            appearance: none;
-            -moz-appearance: none;
-            -webkit-appearance: none;
-            border: 1px solid #c8c6c6;
-            width: 15px;
-            height: 15px;
-            border-radius: 2px;
-            +label:before {
-                font-family: FontAwesome;
-                display: inline-block;
-                font-size: 19px;
-                margin: 10px 0px 15px 30px;
-            }
-             :focus {
-                outline: none;
+            input[type=checkbox] {
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                border: 1px solid #c8c6c6;
+                width: 15px;
+                height: 15px;
+                border-radius: 2px;
+                +label:before {
+                    font-family: FontAwesome;
+                    display: inline-block;
+                    font-size: 19px;
+                    margin: 10px 0 15px 30px;
+                }
+                 :focus {
+                    outline: none;
+                }
             }
         }
         #checkbox1,
@@ -72,12 +71,11 @@ body {
         }
     }
     .chart {
-        margin: 2% 10% 0 10%; 
+        margin: 2% 10% 0 10%;
         background-color: #ffffff;
-        h1{
+        h1 {
             text-align: center;
-            font-family: 'Roboto',
-            sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
     }
 }
