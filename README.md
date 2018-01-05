@@ -2,6 +2,9 @@
 
 An example of nutritional chart used to monitor the nutritional evelução patients, accompanied by a nutrition professional.
 
+[Demo](https://mariorodeghiero.com/chart-js/) - Gitpages demo
+
+
 ![Example running](src/img/example.gif)
 
 ## Getting Started
